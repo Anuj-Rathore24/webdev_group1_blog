@@ -1,0 +1,24 @@
+{
+  "name": "blogging_project",
+  "version": "1.0.0",
+  "description": "inno_project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "webdev_group1_blog"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "consolidate": "^0.16.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mustache": "^4.1.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,10 @@
+#main_heading{
+    color: antiquewhite;
+    font: italic;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+}
+body{
+    background-color: black;
+}
