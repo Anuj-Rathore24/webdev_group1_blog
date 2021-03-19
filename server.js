@@ -28,8 +28,11 @@ app.get("/",(req,res)=>{
     res.status(200).render('home.html')
 })
 
-// this function listen to every activity when called
+app.get("/login",(req,res)=>{
+    res.status(200).render("login.html")
+})
+
+// This function listen to every activity when called
 app.listen(port,()=>
     console.log("The application has started successfully")
 )
-// hello
