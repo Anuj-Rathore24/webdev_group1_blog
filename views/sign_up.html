@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/sign_up.css">
+  <link rel="stylesheet" href="../static/sign_up.css">
+  <script src="../static/sign_up.js"></script>
 </head>
 
 <body>
@@ -20,36 +21,36 @@
           </div>
           <div class="card-body">
             <h6 class="card-title text-center">Register for Blogging !!!</h6>
-            <form class="form-signin">
+            <form class="form-signin" id="Form">
               <div class="form-label-group">
-                <input type="text" id="fname" class="form-control" placeholder="First Name" required autofocus>
+                <input type="text" id="fname" name="First_name" class="form-control" placeholder="First Name" required autofocus>
                 <label for="fname">First Name</label>
               </div>
               
               <div class="form-label-group">
-                <input type="text" id="lname" class="form-control" placeholder="Last name" required autofocus>
+                <input type="text" id="lname" name="Last_name" class="form-control" placeholder="Last name" required autofocus>
                 <label for="lname">Last Name</label>
               </div>
                 
 
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                 <label for="inputEmail">Email address</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                 <label for="inputPassword">Password</label>
               </div>
               
               <div class="form-label-group">
-                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
+                <input type="password" id="inputConfirmPassword" name="confirm_password" class="form-control" placeholder="Password" required>
                 <label for="inputConfirmPassword">Confirm password</label>
               </div>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
                 
-              <a class="d-block text-center mt-2 small" href="index.html">Sign In</a>
+              <a class="d-block text-center mt-2 small" href="/login">Sign In</a>
             </form>
           </div>
         </div>
