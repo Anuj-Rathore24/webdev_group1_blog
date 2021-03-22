@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #007bff;
-  background: linear-gradient(to right, #42275a , #734b6d);
+  background: #d0d0ce;
+  /* background: linear-gradient(to right, #42275a , #734b6d); */
 }
 
 .card-signin {
