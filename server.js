@@ -40,6 +40,9 @@ app.set("view engine", "html");
 app.get("/", (req, res) => {
   res.status(200).render("home.html");
 });
+app.get("/sign_up", (req, res) => {
+  res.status(200).render("sign_up.html");
+});
 
 var check = { correct: "" };
 app.get("/login", (req, res) => {
@@ -49,7 +52,7 @@ app.get("/login", (req, res) => {
 
 // checking login credentails
 app.post("/login_credentials", (req, res) => {
-  Body = req.body;
+  var Body = req.body;
   console.log(Body);
   email = Body.email;
   pswd = Body.password;
@@ -70,6 +73,19 @@ app.post("/login_credentials", (req, res) => {
           res.send(check);
         }
       }
+    }
+  );
+});
+
+// sign credentials
+app.post("/sign_up_credentials", (req, res) => {
+  var body = req.body;
+  console.log(body);
+  con.query(
+    `insert into user_database values("${body.f_name}", "${body.l_name}", "${body.email}","${body.password}")`,
+    function (err, result) {
+      if (err) throw err;
+      res.send("Done");
     }
   );
 });
