@@ -2,8 +2,7 @@ window.onload=function(){
     var submit_form = document.getElementById("Form");
     submit_form.onsubmit = function (e) {
         e.preventDefault();
-        console.log(e.target.confirm_password.value) 
-        console.log(e.target.password.value) 
+        console.log(e.target.confirm_password) 
         if(e.target.confirm_password.value==e.target.password.value){
             validateForm(e.target);
         }else{
