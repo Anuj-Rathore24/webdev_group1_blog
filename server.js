@@ -58,18 +58,19 @@ app.post("/login_credentials", (req, res) => {
   pswd = Body.password;
 
   con.query(
-    `select Pswd from login_database where Email_Id="${email}"`,
+    `select Password from user_database where Email="${email}"`,
     function (err, result) {
       if (err) throw error;
       if (result[0] == undefined) {
         check.correct = "wrong";
         res.send(check);
       } else {
-        if (result[0].Pswd == pswd) {
+        if (result[0].Password == pswd) {
           check.correct = "correct";
           res.send(check);
         } else {
           check.correct = "wrong";
+          console.log(result)
           res.send(check);
         }
       }
