@@ -23,8 +23,9 @@ body {
 
 .card-signin .card-img-left {
   width: 45%;
-  background: scroll center url('https://source.unsplash.com/WEQbe2jBg40/414x512');
+  background: scroll center url("images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg");
   background-size: cover;
+  object-fit: contain;
   transition: all 0.2s;
 }
 
