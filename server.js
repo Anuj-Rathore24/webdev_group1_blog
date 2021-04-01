@@ -49,6 +49,13 @@ app.get("/login", (req, res) => {
   res.status(200).render("index.html");
   check.correct = "";
 });
+app.get("/posting", (req,res)=>{
+  res.status(200).render("posting.html")
+})
+
+app.get("/display",(req,res)=>{
+  res.status(200).render("display.html")
+})
 
 // checking login credentails
 app.post("/login_credentials", (req, res) => {
@@ -70,7 +77,6 @@ app.post("/login_credentials", (req, res) => {
           res.send(check);
         } else {
           check.correct = "wrong";
-          console.log(result)
           res.send(check);
         }
       }
@@ -90,6 +96,16 @@ app.post("/sign_up_credentials", (req, res) => {
     }
   );
 });
+var car=""
+app.post("/publish_credentials",(req,res)=>{
+  console.log("working")
+  var Body=req.body
+  car=Body
+  console.log(Body)
+})
+app.post("/blog_display",(req,res)=>{
+  res.send(car)
+})
 
 // This function listen to every activity when called
 app.listen(port, () => console.log("The application has started successfully"));
