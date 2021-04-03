@@ -1,0 +1,31 @@
+
+#txt_title{
+    font-size: 2rem;
+}
+[contenteditable] {
+    outline: 0px solid transparent;
+}
+.add{
+    transition: display 2s;
+}
+.img_logo:hover{
+    cursor: pointer;
+}
+/* p[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #555; 
+}
+
+p[placeholder]:empty:focus::before {
+    content: "Start from here"; */
+/* } */
+
+.new_para[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block; 
+  }
+/* img{
+    padding: 2px;
+} */
+
