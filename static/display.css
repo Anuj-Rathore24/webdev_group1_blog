@@ -1,0 +1,11 @@
+#main_heading{
+    color: rgb(173, 103, 12);
+    font: italic;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+}
+/* body{
+    background-color: black;
+} */
+
