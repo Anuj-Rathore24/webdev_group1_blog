@@ -1,3 +1,14 @@
+body{
+
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+	font-weight: 200;
+	overflow-x: hidden;
+
+}
+
+
+
 #main_heading{
     color: rgb(173, 103, 12);
     font: italic;
@@ -5,7 +16,12 @@
     position: relative;
     left: 50%;
 }
-#txt_title{
-    font-size: 2rem;
-}
 
+.btn{
+
+    background-color: slategrey;
+    border-top-left-radius: 10px;
+    padding: 4px;
+    font-size: 18px;
+    border: lightgray 2px;
+}
