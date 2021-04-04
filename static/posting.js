@@ -11,9 +11,9 @@ window.onload = function () {
     new_para_div_col.className = "col-11";
     new_para_div_row.append(new_para_div_col);
     var new_para = document.createElement("p");
-    // new_para.placeholder = "Start Here";
+    new_para.innerHTML = "Start Here";
     new_para.contentEditable = "True";
-    new_para.className="new_para"
+    new_para.className = "new_para";
     new_para_div_col.append(new_para);
   };
 
@@ -79,12 +79,35 @@ window.onload = function () {
   };
   k_button = document.getElementById("Submit_krna");
   k_button.onclick = function () {
-    var root = document.getElementById("root").outerHTML;
-    var arr = { content: root };
-    console.log(arr);
-    var xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:80/publish_credentials", true);
-    xhttp.setRequestHeader("Content-Type", "application/json");
-    xhttp.send(JSON.stringify(arr));
+    try{
+      document.getElementById("button-addon1").remove();
+      var list = document.getElementsByClassName("not_required");
+      var list_para = document.getElementsByClassName("new_para");
+      var i=0
+      while (list.length!=0) {
+        list[i].remove();
+      }
+      var J = 0;
+      while (J < list_para.length) {
+        if (list_para[J].innerHTML != "Start Here") {
+          list_para[J].contentEditable = "false";
+        } else {
+          list_para[J].remove();
+          J--;
+        }
+        J++;
+      }
+
+    }finally{
+      var root = document.getElementById("root").outerHTML;
+      var arr = { content: root };
+      // console.log(arr);
+      var xhttp = new XMLHttpRequest();
+      xhttp.open("POST", "http://localhost:80/publish_credentials", true);
+      xhttp.setRequestHeader("Content-Type", "application/json");
+      xhttp.send(JSON.stringify(arr),()=>{
+        window.location.href = "/display"
+      });
+    }
   };
 };
