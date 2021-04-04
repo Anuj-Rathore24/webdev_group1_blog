@@ -1,67 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A New Blog</title>
-    <link rel="stylesheet" href="../static/posting.css">
-    <script src="../static/posting.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="container" id="root1">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>A New Blog</title>
+      <link rel="stylesheet" href="../static/posting.css">
+      <script src="../static/posting.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body style="font-family:'Open Sans', Helvetica, Arial, sans-serif;">
+      <div class="container" id="root1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom:50px">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left: 0%;">
+              <img src="bebo-logo.png" width="30" height="30" class="d-inline-block align-top">
+              Bloggosphere
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-5 mb-lg-0">
+                <li class="nav-item">
+                  <button class="nav-link active" aria-current="page" href="home.html" style="margin-left:700px; border-radius:5px;">Home</button>
+                </li>
+                <button type="submit" id="Submit_krna" style="margin-left:30px; border-radius:5px ;">Publish</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <div id="root">
+       
+           <div class="row">
+              <div class="col-11">
+                  <p id="txt_title" class="new_para" contenteditable="true" style="font-weight:100; ">Title</p>
+              </div>
+              <div class="col-1 not_required">
+                <button type="button" id="button-addon1" onclick="insert_img()" >Image</button>
+              </div>
           </div>
         </div>
-      </nav>
-      <div id="root">
-        
-        <button type="submit" id="Submit_krna">Publish</button>
-        <div class="row">
-            <div class="col-11">
-                <p id="txt_title" class="new_para" contenteditable="true">Title</p>
-            </div>
-            <div class="col-1 not_required">
-              <button class="btn btn-outline-secondary " type="button" id="button-addon1" onclick="insert_img()">Image</button>
-            </div>
-        </div>
       </div>
-    </div>
-</body>
-</html>
+  </body>
+  </html>
+
+  
