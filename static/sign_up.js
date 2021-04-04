@@ -19,6 +19,7 @@ window.onload=function(){
         xhttp.setRequestHeader("Content-Type", "application/json");
         var Credentials = { email: email_element, password: pass_element, l_name: Last_name, f_name: First_name };
         xhttp.send(JSON.stringify(Credentials))
+        window.location.href="/login"
 
     }
 }
