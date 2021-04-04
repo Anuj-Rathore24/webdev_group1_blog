@@ -8,9 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../static/customtemplate.css">
-    <link rel="icon" href="data:;base64,=">
-    <link rel="stylesheet" rel="icon" href="../static/home.css">
+    <link rel="stylesheet" href="/static/customtemplate.css">
+    <link rel="stylesheet" rel="icon" href="/static/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     
    <!--<script src="bootstrap1.js"></script> 
@@ -30,7 +29,7 @@
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
 
-  
+<script src="../static/home.js"></script>
     <title>Homepage</title>
 </head>
 
@@ -55,11 +54,11 @@
                 <span class="sr-only">(current)</span>
               </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="margin-left: 2px; padding:7.5px; border: 2px solid white">Login/SignUp </a>
+        <li class="nav-item" id="Login_button">
+          <a class="nav-link" href="/login" style="margin-left: 2px; padding:7.5px; border: 2px solid white">Login/SignUp </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://imgbb.com/"><img src="https://i.ibb.co/c1djZtS/585e4bf3cb11b227491c339a.png" style="width:30px;height:30px">Hi Muskan!</a>
+        <li class="nav-item" id="User">
+          <a class="nav-link" id="User_Name" href="/my_blogs"><img src="https://i.ibb.co/c1djZtS/585e4bf3cb11b227491c339a.png" style="width:30px;height:30px"></a>
         </li>
       </ul>
     </div>
@@ -81,7 +80,7 @@
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Welcome to Bloggosphere!</h3>
           <p class="lead">Start reading about all that is up and about right now! </p>
-          <a href="contact.html" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Sign up</a>
+          <a href="/login" id="signup_button" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Sign up</a>
         </div>
       </div>
   <!--Caraousel  Slide two setting the background image for this slide -->
@@ -99,7 +98,7 @@
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Write with us!</h3>
           <p class="lead">Start writing with Bloggosphere today!</p>
-          <a href="contact.html" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Write!</a>
+          <a href="/posting" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Write!</a>
         </div>
       </div>
     </div> 
