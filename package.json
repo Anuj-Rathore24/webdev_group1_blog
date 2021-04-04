@@ -1,23 +1,28 @@
 {
-  "name": "blogging_project",
+  "name": "webdev_group1_blog",
   "version": "1.0.0",
-  "description": "inno_project",
-  "main": "index.js",
+  "description": "bloggin website club project",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "webdev_group1_blog"
+    "url": "git+https://github.com/Anuj-Rathore24/webdev_group1_blog.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anuj-Rathore24/webdev_group1_blog/issues"
+  },
+  "homepage": "https://github.com/Anuj-Rathore24/webdev_group1_blog#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "consolidate": "^0.16.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mustache": "^4.1.0",
+    "express-session": "^1.17.1",
+    "mustache": "^4.2.0",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.7"
   }
