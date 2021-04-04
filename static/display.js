@@ -15,16 +15,6 @@ window.onload = function () {
     //   main_container=document.createElement("div")
     var main_container = document.getElementById("root");
     main_container.outerHTML = item.content;
-    document.getElementById("button-addon1").remove();
-    var list = document.getElementsByClassName("not_required");
-    var list_para = document.getElementsByClassName("new_para");
-    for (i = 0; i < list.length; i++) {
-      console.log(list[i]);
-      list[i].remove();
-      console.log("working");
-    }
-    for (i = 0; i < list_para.length; i++) {
-      list_para[i].contentEditable = "false";
-    }
+    
   };
 };
