@@ -105,9 +105,8 @@ window.onload = function () {
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", "http://localhost:80/publish_credentials", true);
       xhttp.setRequestHeader("Content-Type", "application/json");
-      xhttp.send(JSON.stringify(arr),()=>{
-        window.location.href = "/display"
-      });
+      xhttp.send(JSON.stringify(arr))
+      window.location.href = "/display"
     }
   };
 };
