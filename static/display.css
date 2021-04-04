@@ -5,7 +5,7 @@
     position: relative;
     left: 50%;
 }
-/* body{
-    background-color: black;
-} */
+#txt_title{
+    font-size: 2rem;
+}
 
