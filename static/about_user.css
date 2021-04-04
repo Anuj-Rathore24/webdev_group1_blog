@@ -1,0 +1,10 @@
+.blog_card{
+    height: 20vh;
+    overflow: hidden;
+}
+.blog_card:hover{
+    cursor: pointer;
+}
+#txt_title{
+    font-size: 2rem;
+}
