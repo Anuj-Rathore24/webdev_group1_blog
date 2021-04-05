@@ -96,6 +96,8 @@ app.get("/categories",(req,res)=>{
   res.status(200).render("categories.html")
 })
 
+
+// xml requests
 // checking login credentails
 app.post("/login_credentials", (req, res) => {
   var Body = req.body;
