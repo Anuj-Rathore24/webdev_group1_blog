@@ -39,7 +39,7 @@ body {
 
 .form-signin .btn {
   font-size: 80%;
-  border-radius: 5rem;
+  border-radius: 1rem;
   letter-spacing: .1rem;
   padding: 1rem;
   transition: all 0.2s;
@@ -53,7 +53,7 @@ body {
 
 .form-label-group input {
   height: auto;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 .form-label-group>input,.form-label-group>label {
