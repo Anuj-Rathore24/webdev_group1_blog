@@ -9,12 +9,7 @@ body{
 
 }
 
-#main_heading{
-    color: rgb(173, 103, 12);
-    font: italic;
-    display: inline-block;
-    position: relative;
-    left: 42%;
-    margin-bottom: 10px;
+#txt_title{
+    font-size: 2rem;
 }
 

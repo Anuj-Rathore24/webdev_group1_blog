@@ -12,6 +12,21 @@ window.onload = function () {
           create_blogcards(main_list[i]);
         }
       } else {
+        var blog_container = document.createElement("div");
+        blog_container.className = "container border blog_card m-3 empty_blog";
+        blog_container.style.cursor="default"
+        document.getElementById("root").append(blog_container);
+        var text=document.createElement("h2")
+        text.className="text"
+        text.innerHTML="You Haven't Posted Any Blogs"
+        blog_container.append(text)
+        var button=document.createElement("button")
+        button.className="btn btn-outline-primary"
+        button.innerHTML="Write More"
+        button.onclick=function(){
+            window.location.href = "/posting"
+        }
+        blog_container.append(button)
       }
     }
   };
@@ -19,16 +34,12 @@ window.onload = function () {
 
   var main_container = document.getElementById("root");
   create_blogcards = function (content_div) {
-    console.log(content_div);
-    console.log(content_div.content);
     var blog_container = document.createElement("div");
     blog_container.className = "container border blog_card m-3";
     main_container.append(blog_container);
     blog_container.innerHTML = content_div.content;
     blog_container.onclick = function () {
-      console.log(this.outerHTML)
-      console.log(this.innerHTML)
-      var arr={content:this.innerHTML}
+      var arr = { content: this.innerHTML };
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", "http://localhost:80/view_myblog", true);
       xhttp.setRequestHeader("Content-Type", "application/json");

@@ -1,4 +1,16 @@
 window.onload = function () {
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("POST", "http://localhost:80/user_information", true);
+  xhttp.setRequestHeader("Content-Type", "application/json");
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      var main_list = JSON.parse(this.responseText);
+      var span = document.createElement("span");
+      span.innerHTML = `Hi ${main_list.Name}!!!`;
+      document.getElementById("User_Name").append(span);
+    }
+  };
+  xhttp.send();
   // add para function
   var img_count = 0;
   var main_container = document.getElementById("root");
@@ -79,12 +91,12 @@ window.onload = function () {
   };
   k_button = document.getElementById("Submit_krna");
   k_button.onclick = function () {
-    try{
+    try {
       document.getElementById("button-addon1").remove();
       var list = document.getElementsByClassName("not_required");
       var list_para = document.getElementsByClassName("new_para");
-      var i=0
-      while (list.length!=0) {
+      var i = 0;
+      while (list.length != 0) {
         list[i].remove();
       }
       var J = 0;
@@ -97,16 +109,15 @@ window.onload = function () {
         }
         J++;
       }
-
-    }finally{
+    } finally {
       var root = document.getElementById("root").outerHTML;
       var arr = { content: root };
       // console.log(arr);
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", "http://localhost:80/publish_credentials", true);
       xhttp.setRequestHeader("Content-Type", "application/json");
-      xhttp.send(JSON.stringify(arr))
-      window.location.href = "/display"
+      xhttp.send(JSON.stringify(arr));
+      window.location.href = "/display";
     }
   };
 };

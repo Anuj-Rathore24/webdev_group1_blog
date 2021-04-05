@@ -89,7 +89,7 @@ app.get("/posting", redirectlogin,(req, res) => {
   res.status(200).render("posting.html");
 });
 
-app.get("/display", (req, res) => {
+app.get("/display", redirectlogin,(req, res) => {
   res.status(200).render("display.html");
 });
 
