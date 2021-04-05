@@ -8,18 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/static/customtemplate.css">
-    <link rel="stylesheet" rel="icon" href="/static/home.css">
+    <link rel="stylesheet" href="../static/customtemplate.css">
+    <link rel="stylesheet" rel="icon" href="../static/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    
-   <!--<script src="bootstrap1.js"></script> 
-   <script src="bootstrap2.js"></script>-->
-
-    <link
+ <!--<link
       rel="stylesheet"
       href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>-->   
+ <script src=
 "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
     <script src=
@@ -28,7 +24,6 @@
     <script src=
 "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
-
 <script src="../static/home.js"></script>
     <title>Homepage</title>
 </head>
@@ -43,22 +38,23 @@
   </div>-->
 
   <div class="container">
-    <a class="navbar-brand" href="#"> <b>Bloggosphere</b></a>
+    <div class="navbar-brand"><img src="https://i.ibb.co/ZXLVqZ5/newlogo.png" style="width:30px;height:30px"></div>
+    <div class="navbar-brand"> <b>Bloggosphere</b></div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="#" style="margin-left: 2px; padding:7.5px; border: 2px solid white"><b>Home</b>
                 <span class="sr-only">(current)</span>
               </a>
         </li>
         <li class="nav-item" id="Login_button">
-          <a class="nav-link" href="/login" style="margin-left: 2px; padding:7.5px; border: 2px solid white">Login/SignUp </a>
+          <a class="nav-link active" href="/login" style="margin-left: 2px; padding:7.5px; border: 2px solid white"> <b>Login/SignUp</b></a>
         </li>
         <li class="nav-item" id="User">
-          <a class="nav-link" id="User_Name" href="/my_blogs"><img src="https://i.ibb.co/c1djZtS/585e4bf3cb11b227491c339a.png" style="width:30px;height:30px"></a>
+          <a class="nav-link active" id="User_Name" href="/my_blogs" style="margin-left: 2px; padding:7.5px; border: 2px solid white"><img src="https://i.ibb.co/c1djZtS/585e4bf3cb11b227491c339a.png" style="width:30px;height: 30px;"></a>
         </li>
       </ul>
     </div>
@@ -77,27 +73,57 @@
 
 <!--Caraousel  Slide One setting background image for this slide -->
       <div class="carousel-item active" style="background-image: url('https://i.ibb.co/JcfB1jH/pehla.jpg')">
+        <div class="animation-area">
+          <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Welcome to Bloggosphere!</h3>
-          <p class="lead">Start reading about all that is up and about right now! </p>
+          <p class="lead">Start reading and writing by joining our community today!</p>
           <a href="/login" id="signup_button" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Sign up</a>
         </div>
       </div>
   <!--Caraousel  Slide two setting the background image for this slide -->
       Slide Two - Set the background image for this slide in the line below 
-      <div class="carousel-item" style="background-image: url('https://i.ibb.co/DGLGw4W/second.jpg')">
+      <div class="carousel-item" style="background-image: url('https://i.ibb.co/YXk623w/joanna-kosinska-Pbg-Y3ptg-A4-A-unsplash.jpg')">
+        <div class="animation-area">
+          <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Explore around!</h3>
-          <p class="lead">Start reading by signing in!</p>
+          <p class="lead">Start reading even without signing in!</p>
           <a href="#trending" class="btn btn-primary btn-lg hvr-underline-from-left" role="button" >Read!</a>
         </div>
       </div>
      <!--Caraousel  Slide three setting the background image for this slide in the line below -->
       Slide Three - Set the background image for this slide in the line below 
-      <div class="carousel-item" style="background-image: url('https://i.ibb.co/C776049/third.jpg')">
+      <div class="carousel-item" style="background-image: url('https://i.ibb.co/TwNNN32/markus-winkler-jid7-TSoa02c-unsplash.jpg')">
+        <div class="animation-area">
+          <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <div class="carousel-caption d-none d-md-block">
           <h3 class="display-4">Write with us!</h3>
-          <p class="lead">Start writing with Bloggosphere today!</p>
+          <p class="lead">Start writing by becoming a member today!</p>
           <a href="/posting" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Write!</a>
         </div>
       </div>
@@ -128,10 +154,10 @@
         <h3 class="tm-gold-text tm-title">Blog Title Holder</h3>
           <p class="tm-margin-b-30"> ~ XYZAuthorName </p>
 
-          <a href="https://ibb.co/vqBs133"><img src="https://i.ibb.co/QQc89PP/patrick-perkins-ETRPjvb0-KM0-unsplash.jpg" alt="patrick-perkins-ETRPjvb0-KM0-unsplash" border="0" style="width:660px; height:400px"></a>
+          <div><img src="https://i.ibb.co/QQc89PP/patrick-perkins-ETRPjvb0-KM0-unsplash.jpg" alt="patrick-perkins-ETRPjvb0-KM0-unsplash" border="0" style="width:660px; height:400px"></div>
           </a><br>
           <p> <br>
-              This is sample lines of the first blog. The sentences will get displayed and on pressing read more, we get to the part where the full blog will be displayed only after logging in though.
+              This is sample lines of the first blog. The sentences will get displayed and on pressing read more, we get to the part where the full blog will be displayed even if the user does not logg in.
           </p>
           <p>The photo's aspect ratios are fixed, tried to alter the bootstrap for it, Could do more, will figure it out in a day or two. This is just a filler, we can make it shorter and add more divs like these.</p>
           <!--<p class="m-b-2"> Just an extra line to be able to conclude this, blog page is under progress right now, will be done soon.
@@ -148,45 +174,45 @@
                       <h3 class="tm-gold-text tm-title tm-margin-b-30">Categories:</h3>
                       <div class="media tm-related-post">
                         <div class="media-left media-middle">
-                          <a href="#">
+                          <div>
                           <img class="media-object" src="https://i.ibb.co/pPXmHNQ/xx1.jpg" alt="Generic placeholder image" style="width:200px;height:125px">
-                          </a>
+                          </div>
                         </div>
                         <div class="media-body">
-                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lifestyle & Travel</h4></a>
+                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15"><u>Lifestyle & Travel</u></h4></a>
                           <p class="tm-small-font tm-media-description">The links above will redirect to a page having blogs of those specific categories as flagged by the user while writing them. text holds static description of the category.</p>
                         </div>
                       </div>
                       <div class="media tm-related-post">
                         <div class="media-left media-middle">
-                          <a href="#">
+                          <div>
                             <img class="media-object" src="https://i.ibb.co/kXFTRQR/xx2.jpg" alt="Generic placeholder image" style="width:200px;height:125px">
-                          </a>
+                          </div>
                         </div>
                         <div class="media-body">
-                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">News and Politics</h4></a>
+                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15"><u>News and Politics</u></h4></a>
                           <p class="tm-small-font tm-media-description">The links above will redirect to a page having blogs of those specific categories as flagged by the user while writing them. text holds static description of the category.</p>
                         </div>
                       </div>
                       <div class="media tm-related-post">
                         <div class="media-left media-middle">
-                          <a href="#">
+                          <div>
                             <img class="media-object" src="https://i.ibb.co/932wtPv/xx3.jpg" alt="Generic placeholder image" style="width:200px;height:125px">
-                          </a>
+                          </div>
                         </div>
                         <div class="media-body">
-                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Entertainment</h4></a>
+                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15"><u>Entertainment</u></h4></a>
                           <p class="tm-small-font tm-media-description">The links above will redirect to a page having blogs of those specific categories as flagged by the user while writing them. text holds static description of the category.</p>
                         </div>
                       </div> 
                       <div class="media tm-related-post">
                         <div class="media-left media-middle">
-                          <a href="#">
+                          <div>
                           <img class="media-object" src="https://i.ibb.co/pPXmHNQ/xx1.jpg" alt="Generic placeholder image" style="width:200px;height:125px">
-                          </a>
+                          </div>
                         </div>
                         <div class="media-body">
-                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Finance & Bussiness</h4></a>
+                          <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15"><u>Finance & Bussiness</u></h4></a>
                           <p class="tm-small-font tm-media-description">The links above will redirect to a page having blogs of those specific categories as flagged by the user while writing them. text holds static description of the category.</p>
                         </div>
                       </div>
@@ -211,7 +237,7 @@
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
           <div class="tm-content-box">
-            <a href="https://ibb.co/wKW7rvx"><img src="https://i.ibb.co/hKWc1qt/mesut-kaya-b-Cwg-Fb-ll-Ps-unsplash.jpg" alt="mesut-kaya-b-Cwg-Fb-ll-Ps-unsplash" class="tm-margin-b-20 img-fluid"></a>
+            <div><img src="https://i.ibb.co/hKWc1qt/mesut-kaya-b-Cwg-Fb-ll-Ps-unsplash.jpg" alt="mesut-kaya-b-Cwg-Fb-ll-Ps-unsplash" class="tm-margin-b-20 img-fluid"></div>
               <h4 class="tm-margin-b-20 tm-gold-text">Recommended #1</h4>
               <p class="tm-margin-b-20">First few lines of the content blog being displayed. On clicking the button below, the blog main page should get redirected to the reading page.</p>
               <a href="#" class="tm-btn text-uppercase"><b>Read More</b></a>    
@@ -223,17 +249,16 @@
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
           <div class="tm-content-box">
-            <a href="https://ibb.co/Bz1x2rn"><img src="https://i.ibb.co/JBh4jy3/sam-manns-p0-Zv-BVp-W3-KY-unsplash.jpg" alt="sam-manns-p0-Zv-BVp-W3-KY-unsplash" class="tm-margin-b-20 img-fluid"></a>
+            <div><img src="https://i.ibb.co/JBh4jy3/sam-manns-p0-Zv-BVp-W3-KY-unsplash.jpg" alt="sam-manns-p0-Zv-BVp-W3-KY-unsplash" class="tm-margin-b-20 img-fluid"></div>
               <h4 class="tm-margin-b-20 tm-gold-text">Recommended #2</h4>
               <p class="tm-margin-b-20">First few lines of the content blog being displayed. On clicking the button below, the blog main page should get redirected to the reading page.</p>
               <a href="#" class="tm-btn text-uppercase"><b>Read More</b></a>    
           </div>  
-
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
 
           <div class="tm-content-box">
-            <a href="https://ibb.co/wSJ4F5Z"><img src="https://i.ibb.co/0CBrRHp/thought-catalog-505eect-W54k-unsplash.jpg" alt="thought-catalog-505eect-W54k-unsplash" class="tm-margin-b-20 img-fluid"></a>
+            <div><img src="https://i.ibb.co/0CBrRHp/thought-catalog-505eect-W54k-unsplash.jpg" alt="thought-catalog-505eect-W54k-unsplash" class="tm-margin-b-20 img-fluid"></div>
               <h4 class="tm-margin-b-20 tm-gold-text">Recommended #3</h4>
               <p class="tm-margin-b-20">First few lines of the content blog being displayed. On clicking the button below, the blog main page should get redirected to the reading page.</p>
               <a href="#" class="tm-btn text-uppercase"><b>Read More</b></a>    
@@ -243,7 +268,7 @@
 
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
           <div class="tm-content-box">
-            <a href="https://ibb.co/Gv0rkMp"><img src="https://i.ibb.co/sv2XQ1R/rana-sawalha-W-6-PWGb-Ya-U-unsplash.jpg" alt="rana-sawalha-W-6-PWGb-Ya-U-unsplash" class="tm-margin-b-20 img-fluid"></a>
+            <div><img src="https://i.ibb.co/sv2XQ1R/rana-sawalha-W-6-PWGb-Ya-U-unsplash.jpg" alt="rana-sawalha-W-6-PWGb-Ya-U-unsplash" class="tm-margin-b-20 img-fluid"></div>
               <h4 class="tm-margin-b-20 tm-gold-text">Recommended #4</h4>
               <p class="tm-margin-b-20">First few lines of the content blog being displayed. On clicking the button below, the blog main page should get redirected to the reading page.</p>
               <a href="#" class="tm-btn text-uppercase"><b>Read More</b></a>    
@@ -257,9 +282,9 @@
 <br>
 <br>
 <div class="newfooter" style= "left:0; bottom:0; height:50px; width: 100%;background-color:white; text-align:center" >
-  <a href="https://imgbb.com/"><img src="https://i.ibb.co/C5jb0X1/43-twitter-512.png" style="width:50px;height:50px; padding:2px"></a>
-  <a href="https://ibb.co/H2DzDDR"><img src="https://i.ibb.co/fSYpYYZ/639b3dafb544d6f061fcddd2d6686ddb.jpg" style="width:70px;height:50px; padding:2px"></a>
-  <a href="https://imgbb.com/"><img src="https://i.ibb.co/rwMk2v6/Whatsapp-512.png" style="width:45x;height:45px; padding:2px"></a>
+  <a href="#"><img src="https://i.ibb.co/C5jb0X1/43-twitter-512.png" style="width:50px;height:50px; padding:2px"></a>
+  <a href="#"><img src="https://i.ibb.co/fSYpYYZ/639b3dafb544d6f061fcddd2d6686ddb.jpg" style="width:70px;height:50px; padding:2px"></a>
+  <a href="#"><img src="https://i.ibb.co/rwMk2v6/Whatsapp-512.png" style="width:45x;height:45px; padding:2px"></a>
 
 </div>
 
