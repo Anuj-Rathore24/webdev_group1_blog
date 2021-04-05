@@ -4,24 +4,17 @@ body{
     font-size: 18px;
 	font-weight: 200;
 	overflow-x: hidden;
+    left: 10%;
+    right: 10%;
 
 }
-
-
 
 #main_heading{
     color: rgb(173, 103, 12);
     font: italic;
     display: inline-block;
     position: relative;
-    left: 50%;
+    left: 42%;
+    margin-bottom: 10px;
 }
 
-.btn{
-
-    background-color: slategrey;
-    border-top-left-radius: 10px;
-    padding: 4px;
-    font-size: 18px;
-    border: lightgray 2px;
-}
