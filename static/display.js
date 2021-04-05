@@ -14,7 +14,7 @@ window.onload = function () {
   display_function = function (item) {
     //   main_container=document.createElement("div")
     var main_container = document.getElementById("root");
-    main_container.outerHTML = item.content;
+    main_container.innerHTML = item.content;
     
   };
 };

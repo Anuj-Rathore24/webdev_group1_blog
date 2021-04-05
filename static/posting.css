@@ -3,9 +3,9 @@
 #txt_title{
     font-size: 2rem;
 }
-/*[contenteditable] {
+[contenteditable] {
     outline: 0px solid transparent;
-}*/
+}
 .new_para
 {
     margin-left: 4rem;

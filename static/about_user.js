@@ -38,8 +38,9 @@ window.onload = function () {
     blog_container.className = "container border blog_card m-3";
     main_container.append(blog_container);
     blog_container.innerHTML = content_div.content;
+    
     blog_container.onclick = function () {
-      var arr = { content: this.innerHTML };
+      var arr = { content: content_div.content};
       var xhttp = new XMLHttpRequest();
       xhttp.open("POST", "http://localhost:80/view_myblog", true);
       xhttp.setRequestHeader("Content-Type", "application/json");
